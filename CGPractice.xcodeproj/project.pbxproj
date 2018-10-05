@@ -13,6 +13,7 @@
 		B5096CD021677196008EE7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5096CCF21677196008EE7E5 /* Assets.xcassets */; };
 		B5096CD321677196008EE7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5096CD121677196008EE7E5 /* LaunchScreen.storyboard */; };
 		B5096CDE21677196008EE7E5 /* CGPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5096CDD21677196008EE7E5 /* CGPracticeUITests.swift */; };
+		B5096CE92167727B008EE7E5 /* ARCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5096CE82167727B008EE7E5 /* ARCView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B5096CD921677196008EE7E5 /* CGPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5096CDD21677196008EE7E5 /* CGPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPracticeUITests.swift; sourceTree = "<group>"; };
 		B5096CDF21677196008EE7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5096CE82167727B008EE7E5 /* ARCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				B5096CC821677194008EE7E5 /* AppDelegate.swift */,
 				B5096CCA21677194008EE7E5 /* ViewController.swift */,
+				B5096CE82167727B008EE7E5 /* ARCView.swift */,
 				B5096CCC21677194008EE7E5 /* Main.storyboard */,
 				B5096CCF21677196008EE7E5 /* Assets.xcassets */,
 				B5096CD121677196008EE7E5 /* LaunchScreen.storyboard */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5096CCB21677194008EE7E5 /* ViewController.swift in Sources */,
+				B5096CE92167727B008EE7E5 /* ARCView.swift in Sources */,
 				B5096CC921677194008EE7E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
