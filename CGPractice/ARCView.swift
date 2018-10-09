@@ -17,8 +17,13 @@ class ARCView: UIView {
     
     
     override func draw(_ rect: CGRect) {
-        centerPointX = (self.bounds.origin.x + self.bounds.size.width) / 2
-        centerPointY = (self.bounds.origin.y + self.bounds.size.width)
+        centerPointX = (self.bounds.size.width) / 2
+        centerPointY = (self.bounds.size.width)
+        
+        print("bounds.origin.x= \(bounds.origin.x)")
+        print("bounds.origin.y= \(bounds.origin.y)")
+        print("frame.origin.x= \(frame.origin.x)")
+        print("frame.origin.y= \(frame.origin.y)")
         centerPoint = CGPoint(x: centerPointX, y: centerPointY)
         radius = centerPointY
 
