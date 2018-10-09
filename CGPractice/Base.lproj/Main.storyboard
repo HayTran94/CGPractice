@@ -6,8 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,18 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Zg-C6-M8u" customClass="ARCView" customModule="CGPractice" customModuleProvider="target">
-                                <rect key="frame" x="94" y="240" width="187.5" height="187.5"/>
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="2Zg-C6-M8u" secondAttribute="height" multiplier="1:1" id="pBH-V6-ZQ5"/>
+                                    <constraint firstAttribute="height" constant="100" id="8Vd-Cr-JkV"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2Zg-C6-M8u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JCj-Ef-pzk"/>
-                            <constraint firstItem="2Zg-C6-M8u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VwJ-Gf-KPP"/>
-                            <constraint firstItem="2Zg-C6-M8u" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="vfR-nT-VY3"/>
+                            <constraint firstItem="2Zg-C6-M8u" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="2dp-L8-CaJ"/>
+                            <constraint firstItem="2Zg-C6-M8u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cpk-of-oay"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Zg-C6-M8u" secondAttribute="bottom" id="o5P-Cu-N68"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

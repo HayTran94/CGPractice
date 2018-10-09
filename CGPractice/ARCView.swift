@@ -17,13 +17,14 @@ class ARCView: UIView {
     
     
     override func draw(_ rect: CGRect) {
-        centerPointX = (self.bounds.origin.x + self.bounds.size.width)  / 2
-        centerPointY = (self.bounds.origin.y + self.bounds.size.height) / 2
+        centerPointX = (self.bounds.origin.x + self.bounds.size.width) / 2
+        centerPointY = (self.bounds.origin.y + self.bounds.size.width)
         centerPoint = CGPoint(x: centerPointX, y: centerPointY)
-        radius = self.bounds.size.height / 2
+        radius = centerPointY
 
         drawCircle()
         drawSquare()
+//        getDegree()
     }
     
     func drawCircle() {
@@ -41,12 +42,30 @@ class ARCView: UIView {
         self.layer.addSublayer(shapeLayer)
     }
     
+//    func getDegree() {
+//        let cornerPointX = 0
+//        let a = Double(1)
+//        let b = Double(-2*centerPointY)
+//        let c = centerPointY*centerPointY - radius*radius + centerPointX*centerPointX
+//
+//        let delta = b*b - 4*a*Double(c)
+//        let y1 = (-b + delta.squareRoot()) / 2*a
+//        let y2 = (-b - delta.squareRoot()) / 2*a
+//
+//        print("y1 = \(y1)")
+//        print("y2 = \(y2)")
+//        print("delta = \(delta)")
+//        print("delta root = \(delta.squareRoot())")
+//
+//    }
+    
+    
     func drawSquare() {
-        let radian = 50*(Double.pi/180)
-        let centerPointX2 = Double(centerPointX) * cos(radian)
-        let centerPointY2 = Double(centerPointY) * sin(radian)
+        let radian = 290*(Double.pi/180)
+        let centerPointX2 = Double(centerPointX) +  Double(radius) * cos(radian)
+        let centerPointY2 = Double(centerPointY) + Double(radius) * sin(radian)
         let centerPoint2  = CGPoint(x: centerPointX2, y: centerPointY2)
-        let circlePath = UIBezierPath(arcCenter: centerPoint2, radius: 1, startAngle: CGFloat(0), endAngle:CGFloat(M_PI * 2), clockwise: true)
+        let circlePath = UIBezierPath(arcCenter: centerPoint2, radius: 5, startAngle: CGFloat(0), endAngle:CGFloat(M_PI * 2), clockwise: true)
         
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = circlePath.cgPath
